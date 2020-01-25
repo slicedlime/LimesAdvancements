@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:oak_boat"
+    },
+    "title": {
+      "translate": "The Great Blue"
+    },
+    "description": {
+      "translate": "We'll make a sailor out of you yet"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/block/tube_coral_block.png"
+  },
+  "criteria": {
+    "in_water": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:water"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_water"
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "lap:ocean/fall_into_water",
+  "display": {
+    "icon": {
+      "item": "minecraft:soul_sand"
+    },
+    "title": {
+      "translate": "Bubble Up"
+    },
+    "description": {
+      "translate": "Travel up a bubble column"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bubbles": {
+      "trigger": "minecraft:enter_block",
+	  "conditions": {
+	    "block": "minecraft:bubble_column",
+		"state": {
+		  "drag": false
+		}
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "bubbles"
+    ]
+  ]
+}

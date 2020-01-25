@@ -1,0 +1,31 @@
+{
+  "parent": "lap:nether/portal",
+  "display": {
+    "icon": {
+      "item": "minecraft:magma_block"
+    },
+    "title": {
+      "translate": "advancements.story.enter_the_nether.title"
+    },
+    "description": {
+      "translate": "Enter the Nether"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "entered_nether": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_nether"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "entered_nether"
+    ]
+  ]
+}

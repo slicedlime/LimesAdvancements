@@ -1,0 +1,31 @@
+{
+  "parent": "lap:nether/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:obsidian"
+    },
+    "title": {
+      "translate": "Portal in Minecraft!"
+    },
+    "description": {
+      "translate": "Obsidian and Fire are keys to a dimension of Shadow and Flame"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "portal": {
+      "trigger": "minecraft:enter_block",
+	  "conditions": {
+	    "block": "minecraft:nether_portal"
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "portal"
+    ]
+  ]
+}

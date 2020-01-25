@@ -1,0 +1,35 @@
+{
+  "parent": "lap:ocean/treasure_map",
+  "display": {
+    "icon": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "title": {
+      "translate": "X Marks the Spot"
+    },
+    "description": {
+      "translate": "Find the heart of the sea"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "heart_of_the_sea": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:heart_of_the_sea"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "heart_of_the_sea"
+    ]
+  ]
+}

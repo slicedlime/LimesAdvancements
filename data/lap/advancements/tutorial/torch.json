@@ -1,0 +1,33 @@
+{
+  "parent": "lap:tutorial/wooden_pickaxe",
+  "display": {
+    "icon": {
+      "item": "minecraft:torch"
+    },
+    "title": {
+      "translate": "Let There Be Light"
+    },
+    "description": {
+      "translate": "Place a torch to light up the world"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "torch": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+            "item": "minecraft:torch"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "torch"
+    ]
+  ]
+}

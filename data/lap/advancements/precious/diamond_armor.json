@@ -1,0 +1,68 @@
+{
+  "parent": "lap:precious/diamonds",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_helmet"
+    },
+    "title": {
+      "translate": "Decorated Uniform"
+    },
+    "description": {
+      "translate": "Did you know you can make armor out of tiny blue rocks?"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "diamond_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_helmet"
+          }
+        ]
+      }
+    },
+    "diamond_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_chestplate"
+          }
+        ]
+      }
+    },
+    "diamond_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_leggings"
+          }
+        ]
+      }
+    },
+    "diamond_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diamond_helmet",
+      "diamond_chestplate",
+      "diamond_leggings",
+      "diamond_boots"
+    ]
+  ]
+}

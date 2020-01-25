@@ -1,0 +1,58 @@
+{
+  "parent": "lap:ocean/lightning_creeper",
+  "display": {
+    "icon": {
+      "item": "minecraft:zombie_head"
+    },
+    "title": {
+      "translate": "Getting Ahead"
+    },
+    "description": {
+      "translate": "Use a charged creeper to obtain a mob head"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "zombie_head": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:zombie_head"
+          }
+        ]
+      }
+    },
+    "creeper_head": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:creeper_head"
+          }
+        ]
+      }
+    },
+    "skeleton_skull": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:skeleton_skull"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "zombie_head",
+      "creeper_head",
+      "skeleton_skull"
+    ]
+  ]
+
+}

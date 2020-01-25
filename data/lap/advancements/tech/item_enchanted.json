@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf"
+    },
+    "title": {
+	  "translate": "You're a Wizard, Steve"
+	},
+    "description": {
+      "translate": "Enchant an item at a maximum strength Enchanting Table"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "enchanted_item": {
+      "trigger": "minecraft:enchanted_item",
+      "conditions": {
+	    "levels": {
+		  "min": 3
+		}
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "enchanted_item"
+    ]
+  ],
+  "rewards": {
+    "function": "lap:item_enchanted"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "lap:tutorial/be_hungry",
+  "display": {
+    "icon": {
+      "item": "minecraft:apple"
+    },
+    "title": {
+      "translate": "Calories Count"
+    },
+    "description": {
+      "translate": "Eat something!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "tag": "lap:food"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "lap:nether/in_nether",
+  "display": {
+    "icon": {
+      "item": "minecraft:map"
+    },
+    "title": {
+      "translate": "Fast Travel"
+    },
+    "description": {
+      "translate": "Travel 1000 blocks in the Nether to travel 8000 blocks in the Overworld"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "travelled": {
+      "trigger": "minecraft:nether_travel",
+      "conditions": {
+        "distance": {
+          "horizontal": {
+            "min": 8000.0
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "travelled"
+    ]
+  ]
+}

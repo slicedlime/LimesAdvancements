@@ -1,0 +1,35 @@
+{
+  "parent": "lap:nether/in_nether",
+  "display": {
+    "icon": {
+      "item": "minecraft:ghast_tear"
+    },
+    "title": {
+      "translate": "Why Ghasts Cry"
+    },
+    "description": {
+      "translate": "Pick up a fallen Ghast Tear"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ghast_tear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:ghast_tear"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ghast_tear"
+    ]
+  ]
+}

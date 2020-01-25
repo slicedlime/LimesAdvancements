@@ -1,0 +1,38 @@
+{
+  "parent": "lap:iron_age/smelt_iron",
+  "display": {
+    "icon": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "title": {
+      "translate": "Pyromania"
+    },
+    "description": {
+      "translate": "Craft a flint and steel to make fire with"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "flint_and_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:flint_and_steel"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "flint_and_steel"
+    ]
+  ],
+  "rewards": {
+    "function": "lap:open_nether"
+  }
+}

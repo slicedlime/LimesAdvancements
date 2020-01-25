@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_ore"
+    },
+    "title": {
+      "translate": "Blue Shiny Rocks?"
+    },
+    "description": {
+      "translate": "Diamonds are a crafter's best friend"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/block/obsidian.png"
+  },
+  "criteria": {
+    "never": {
+      "trigger": "impossible"
+    }
+  },
+  "requirements": [
+    [
+      "never"
+    ]
+  ]
+}

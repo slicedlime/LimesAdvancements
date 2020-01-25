@@ -1,0 +1,35 @@
+{
+  "parent": "lap:ocean/kill_elder_guardian",
+  "display": {
+    "icon": {
+      "item": "minecraft:sponge"
+    },
+    "title": {
+      "translate": "Approximately 10 Hours Later"
+    },
+    "description": {
+      "translate": "Get and dry out a sponge"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sponge": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sponge"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sponge"
+    ]
+  ]
+}

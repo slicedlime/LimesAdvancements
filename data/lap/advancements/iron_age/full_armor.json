@@ -1,0 +1,74 @@
+{
+  "parent": "lap:iron_age/armor",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_chestplate"
+    },
+    "title": {
+      "translate": "Knight in Shining Armor"
+    },
+    "description": {
+      "translate": "Make a full set of iron armor"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iron_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_helmet"
+          }
+        ]
+      }
+    },
+    "iron_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_chestplate"
+          }
+        ]
+      }
+    },
+    "iron_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_leggings"
+          }
+        ]
+      }
+    },
+    "iron_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "iron_helmet"
+	],
+	[
+      "iron_chestplate"
+	],
+	[
+      "iron_leggings"
+	],
+	[
+      "iron_boots"
+    ]
+  ]
+}

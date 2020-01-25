@@ -1,0 +1,35 @@
+{
+  "parent": "lap:tutorial/crafting_table",
+  "display": {
+    "icon": {
+      "item": "minecraft:oak_door"
+    },
+    "title": {
+      "translate": "Home Sweet Home"
+    },
+    "description": {
+      "translate": "Make a door for your very own house"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "door": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:doors"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "door"
+    ]
+  ]
+}

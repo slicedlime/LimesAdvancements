@@ -1,0 +1,35 @@
+{
+  "parent": "lap:iron_age/smelt_iron",
+  "display": {
+    "icon": {
+      "item": "minecraft:blast_furnace"
+    },
+    "title": {
+      "translate": "Having a Blast"
+    },
+    "description": {
+      "translate": "Craft a quicker furnace for smelting ores"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blast_furnace": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blast_furnace"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blast_furnace"
+    ]
+  ]
+}

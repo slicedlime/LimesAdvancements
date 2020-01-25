@@ -1,0 +1,28 @@
+{
+  "parent": "lap:ocean/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:water_bucket"
+    },
+    "title": {
+      "translate": "Making A Splash"
+    },
+    "description": {
+      "translate": "Safely fall more than 24 blocks and land in water"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

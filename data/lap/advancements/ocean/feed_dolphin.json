@@ -1,0 +1,28 @@
+{
+  "parent": "lap:ocean/fish",
+  "display": {
+    "icon": {
+      "item": "minecraft:chest"
+    },
+    "title": {
+      "translate": "Echo-Location"
+    },
+    "description": {
+      "translate": "Feed a dolphin a fish and follow it to something interesting"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "impossible"
+    }
+  },
+  "requirements": [
+    [
+      "never"
+    ]
+  ]
+}

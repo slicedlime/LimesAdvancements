@@ -1,0 +1,35 @@
+{
+  "parent": "lap:ocean/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:scute"
+    },
+    "title": {
+      "translate": "Teenage Scutant Ninja Turtles"
+    },
+    "description": {
+      "translate": "Protect a turtle as it grows up to get a scute"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "scute": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:scute"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "scute"
+    ]
+  ]
+}

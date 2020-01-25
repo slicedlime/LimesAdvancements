@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_ore"
+    },
+    "title": {
+      "translate": "The Iron Age?"
+    },
+    "description": {
+      "translate": "We're skipping bronze"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "never": {
+      "trigger": "impossible"
+    }
+  },
+  "requirements": [
+    [
+      "never"
+    ]
+  ]
+}

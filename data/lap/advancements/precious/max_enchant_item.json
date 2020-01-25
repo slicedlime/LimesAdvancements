@@ -1,0 +1,28 @@
+{
+  "parent": "lap:precious/enchant_item",
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf"
+    },
+    "title": {
+	  "translate": "You're a Wizard, Steve"
+	},
+    "description": {
+      "translate": "Enchant an item at a maximum strength Enchanting Table"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+	  "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

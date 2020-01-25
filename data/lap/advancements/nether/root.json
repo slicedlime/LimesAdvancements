@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherrack"
+    },
+    "title": {
+      "translate": "The Nether"
+    },
+    "description": {
+      "translate": "Welcome to The Warm Place"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/block/netherrack.png"
+  },
+  "criteria": {
+    "never": {
+      "trigger": "impossible"
+    }
+  },
+  "requirements": [
+    [
+      "never"
+    ]
+  ]
+}

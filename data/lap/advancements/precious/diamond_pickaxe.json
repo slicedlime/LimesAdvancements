@@ -1,0 +1,35 @@
+{
+  "parent": "lap:precious/diamonds",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "title": {
+      "translate": "Mine Precious"
+    },
+    "description": {
+      "translate": "Craft a diamond pickaxe"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "diamond_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_pickaxe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diamond_pickaxe"
+    ]
+  ]
+}

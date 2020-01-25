@@ -1,0 +1,61 @@
+{
+  "parent": "lap:iron_age/iron_pickaxe",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_shovel"
+    },
+    "title": {
+      "translate": "ALL The Iron"
+    },
+    "description": {
+      "translate": "Craft an iron shovel, axe and hoe as well"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_axe"
+          }
+        ]
+      }
+    },
+	"shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_shovel"
+          }
+        ]
+      }
+    },
+	"hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "axe"
+	],
+	[
+	  "shovel"
+	],
+	[
+	  "hoe"
+    ]
+  ]
+}

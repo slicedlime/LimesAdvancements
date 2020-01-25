@@ -1,0 +1,29 @@
+{
+  "parent": "lap:ocean/trident",
+  "display": {
+    "icon": {
+      "item": "minecraft:trident",
+      "nbt": "{Enchantments:[{lvl:3s, id:\"minecraft:riptide\"}]}"
+    },
+    "title": {
+      "translate": "Rip & Tide"
+    },
+    "description": {
+      "translate": "Throw yourself out of the ocean"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "impossible"
+    }
+  },
+  "requirements": [
+    [
+      "never"
+    ]
+  ]
+}

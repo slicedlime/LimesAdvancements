@@ -1,0 +1,28 @@
+{
+  "parent": "lap:tutorial/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:bowl"
+    },
+    "title": {
+      "translate": "Hungry...?"
+    },
+    "description": {
+      "translate": "Your stomach is growling!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "hungry": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "hungry"
+    ]
+  ]
+}

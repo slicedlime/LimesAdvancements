@@ -1,0 +1,61 @@
+{
+  "parent": "lap:tutorial/wooden_pickaxe",
+  "display": {
+    "icon": {
+      "item": "minecraft:wooden_shovel"
+    },
+    "title": {
+      "translate": "ALL The Tools"
+    },
+    "description": {
+      "translate": "Craft a shovel, an axe and a hoe as well"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "lap:axes"
+          }
+        ]
+      }
+    },
+	"shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "lap:shovels"
+          }
+        ]
+      }
+    },
+	"hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "lap:hoes"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "axe"
+	],
+	[
+	  "shovel"
+	],
+	[
+	  "hoe"
+    ]
+  ]
+}

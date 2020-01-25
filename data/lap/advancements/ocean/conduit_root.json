@@ -1,0 +1,28 @@
+{
+  "parent": "lap:ocean/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:conduit"
+    },
+    "title": {
+      "translate": "A Beating Heart"
+    },
+    "description": {
+      "translate": "An underwater beacon"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

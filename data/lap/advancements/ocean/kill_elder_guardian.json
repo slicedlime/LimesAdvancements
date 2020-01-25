@@ -1,0 +1,34 @@
+{
+  "parent": "lap:ocean/monument",
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:\"e56a8749-8a4a-40cc-9ded-3c90f8ae8c63\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM3OTc0ODJhMTRiZmNiODc3MjU3Y2IyY2ZmMWI2ZTZhOGI4NDEzMzM2ZmZiNGMyOWE2MTM5Mjc4YjQzNmIifX19\"}]}}}"
+    },
+    "title": {
+      "translate": "Disrespect Your Elders"
+    },
+    "description": {
+      "translate": "Kill an Elder Guardian"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "elder_guardian": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:elder_guardian"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "elder_guardian"
+    ]
+  ]
+}

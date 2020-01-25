@@ -1,0 +1,35 @@
+{
+  "parent": "lap:ocean/kill_drowned",
+  "display": {
+    "icon": {
+      "item": "minecraft:nautilus_shell"
+    },
+    "title": {
+      "translate": "By the Seashore"
+    },
+    "description": {
+      "translate": "Obtain a nautilus shell"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nautilus_shell": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:nautilus_shell"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "nautilus_shell"
+    ]
+  ]
+}
