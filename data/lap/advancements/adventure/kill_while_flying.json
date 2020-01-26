@@ -1,0 +1,374 @@
+{
+  "parent": "lap:adventure/kill_a_mob",
+  "display": {
+    "icon": {
+      "item": "minecraft:elytra"
+    },
+    "title": {
+      "translate": "In-Flight Entertainment"
+    },
+    "description": {
+      "translate": "Kill a monster while flying"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "minecraft:cave_spider": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:cave_spider"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:spider": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:spider"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:zombie_pigman": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:zombie_pigman"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:enderman": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:enderman"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:blaze": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:blaze"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:creeper": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:creeper"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:evoker": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:evoker"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:ghast": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:ghast"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:guardian": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:guardian"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:husk": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:husk"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:magma_cube": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:magma_cube"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:shulker": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:shulker"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:silverfish": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:silverfish"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:skeleton": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:skeleton"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:slime": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:slime"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:stray": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:stray"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:vindicator": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:vindicator"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:witch": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:witch"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:wither_skeleton": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:wither_skeleton"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:zombie": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:zombie"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:zombie_villager": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:zombie_villager"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:phantom": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:phantom"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:drowned": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:drowned"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:pillager": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:pillager"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    },
+    "minecraft:ravager": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:ravager"
+        },
+		"killing_blow": {
+		  "source_entity": {
+		    "nbt": "{\"FallFlying\":1b}"
+		  }
+		}
+      }
+    }
+  },
+  "requirements": [
+    [
+      "minecraft:cave_spider",
+      "minecraft:spider",
+      "minecraft:zombie_pigman",
+      "minecraft:enderman",
+      "minecraft:blaze",
+      "minecraft:creeper",
+      "minecraft:evoker",
+      "minecraft:ghast",
+      "minecraft:guardian",
+      "minecraft:husk",
+      "minecraft:magma_cube",
+      "minecraft:shulker",
+      "minecraft:silverfish",
+      "minecraft:skeleton",
+      "minecraft:slime",
+      "minecraft:stray",
+      "minecraft:vindicator",
+      "minecraft:witch",
+      "minecraft:wither_skeleton",
+      "minecraft:zombie",
+      "minecraft:zombie_villager",
+      "minecraft:phantom",
+      "minecraft:drowned",
+      "minecraft:pillager",
+      "minecraft:ravager"
+    ]
+  ]
+}

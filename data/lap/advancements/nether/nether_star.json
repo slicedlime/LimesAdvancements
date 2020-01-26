@@ -1,0 +1,46 @@
+{
+  "parent": "lap:nether/wither_skull",
+  "display": {
+    "icon": {
+      "item": "minecraft:nether_star"
+    },
+    "title": {
+      "translate": "Skulls With Souls"
+    },
+    "description": {
+      "translate": "Summon and kill the Wither to get its Nether Star"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "damaged": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:wither"
+        }
+      }
+    },
+    "star": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:nether_star"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "damaged"
+    ],
+    [
+      "star"
+    ]
+  ]
+}

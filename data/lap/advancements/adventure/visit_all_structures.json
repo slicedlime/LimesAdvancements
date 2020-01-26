@@ -1,0 +1,133 @@
+{
+  "parent": "lap:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:cartography_table"
+    },
+    "title": {
+      "translate": "Tourist Trap"
+    },
+    "description": {
+      "translate": "Visit all types of structures in the overworld"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "criteria": {
+    "desert_pyramid": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "desert_pyramid"
+      }
+    },
+    "igloo": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "igloo"
+      }
+    },
+    "jungle_pyramid": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "jungle_pyramid"
+      }
+    },
+    "mansion": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "mansion"
+      }
+    },
+    "mineshaft": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "mineshaft"
+      }
+    },
+    "monument": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "monument"
+      }
+    },
+    "ocean_ruin": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "ocean_ruin"
+      }
+    },
+    "pillager_outpost": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "pillager_outpost"
+      }
+    },
+    "shipwreck": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "shipwreck"
+      }
+    },
+    "stronghold": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "stronghold"
+      }
+    },
+    "swamp_hut": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "swamp_hut"
+      }
+    },
+    "village": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "village"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "desert_pyramid"
+    ],
+    [
+      "igloo"
+    ],
+    [
+      "jungle_pyramid"
+    ],
+    [
+      "mansion"
+    ],
+    [
+      "mineshaft"
+    ],
+    [
+      "monument"
+    ],
+    [
+      "ocean_ruin"
+    ],
+    [
+      "pillager_outpost"
+    ],
+    [
+      "shipwreck"
+    ],
+    [
+      "stronghold"
+    ],
+    [
+      "swamp_hut"
+    ],
+    [
+      "village"
+    ]
+  ]
+}

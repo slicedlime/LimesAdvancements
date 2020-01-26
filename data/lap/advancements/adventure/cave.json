@@ -1,0 +1,31 @@
+{
+  "parent": "lap:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:torch"
+    },
+    "title": {
+      "translate": "Go Caving"
+    },
+    "description": {
+      "translate": "Find a cave - it might have useful things inside!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cave": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:cave_air"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cave"
+    ]
+  ]
+}

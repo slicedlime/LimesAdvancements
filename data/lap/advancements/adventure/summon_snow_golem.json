@@ -1,0 +1,33 @@
+{
+  "parent": "lap:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "title": {
+      "translate": "Snowball Fight"
+    },
+    "description": {
+      "translate": "Do you want to build a snow golem?"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "snow_golem": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:snow_golem"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "snow_golem"
+    ]
+  ]
+}

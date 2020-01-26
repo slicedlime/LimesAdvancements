@@ -13,8 +13,8 @@ tellraw @a[advancements={lap:ocean/nautilus_shell=true,lap:ocean/heart_of_the_se
 advancement grant @a[advancements={lap:ocean/nautilus_shell=true,lap:ocean/heart_of_the_sea=true,lap:ocean/conduit_root=false}] only lap:ocean/conduit_root
 
 # Blue shiny rocks?
-tellraw @a[advancements={lap:iron_age/iron_pickaxe=true},x=-30000000,y=0,z=-30000000,dx=60000000,dy=20,dz=60000000,nbt={Dimension:0}] [{"translate":"A new quest line is now available: "}, {"translate": "Blue Shiny Rocks?", "color":"green"}]
-advancement grant @a[advancements={lap:iron_age/iron_pickaxe=true},x=-30000000,y=0,z=-30000000,dx=60000000,dy=20,dz=60000000,nbt={Dimension:0}] only lap:precious/root
+tellraw @a[advancements={lap:iron_age/iron_pickaxe=true,lap:precious/root=false},x=-30000000,y=0,z=-30000000,dx=60000000,dy=20,dz=60000000,nbt={Dimension:0}] [{"translate":"A new quest line is now available: "}, {"translate": "Blue Shiny Rocks?", "color":"green"}]
+advancement grant @a[advancements={lap:iron_age/iron_pickaxe=true,lap:precious/root=false},x=-30000000,y=0,z=-30000000,dx=60000000,dy=20,dz=60000000,nbt={Dimension:0}] only lap:precious/root
 
 # Feed dolphin
 function lap:check_dolphin_feeding
@@ -27,6 +27,15 @@ function lap:check_falling
 
 # The Nether
 execute as @a[nbt={Dimension:-1},advancements={lap:nether/root=false}] run function lap:open_nether
+
+# Multikill
+function lap:check_kills
+
+# Totem of undying
+function lap:check_totem
+
+# Shear snow golem
+function lap:check_snow_golem
 
 # Check for portal creation
 function lap:check_for_portals

@@ -1,0 +1,38 @@
+{
+  "parent": "lap:adventure/kill_a_mob",
+  "display": {
+    "icon": {
+      "item": "minecraft:arrow"
+    },
+    "title": {
+      "translate": "advancements.adventure.shoot_arrow.title"
+    },
+    "description": {
+      "translate": "Kill something by shooting it with an arrow"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shot_arrow": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "type": {
+            "is_projectile": true,
+            "direct_entity": {
+              "type": "#minecraft:arrows"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shot_arrow"
+    ]
+  ]
+}

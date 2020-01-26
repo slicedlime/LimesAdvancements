@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:compass"
+    },
+    "title": {
+      "translate": "Adventure"
+    },
+    "description": {
+      "translate": "Let's go on an adventure!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/block/stone_bricks.png"
+  },
+  "criteria": {
+    "killed_something": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {}
+    },
+    "killed_by_something": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {}
+    },
+    "cave": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:cave_air"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed_something",
+      "killed_by_something",
+	  "cave"
+    ]
+  ]
+}

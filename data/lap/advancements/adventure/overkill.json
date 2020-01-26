@@ -1,0 +1,39 @@
+{
+  "parent": "lap:adventure/kill_a_mob",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_axe",
+      "nbt": "{Damage:0,Enchantments:[{lvl:5s, id:\"minecraft:sharpness\"}]}"
+    },
+    "title": {
+      "translate": "Overkill"
+    },
+    "description": {
+      "translate": "Deal more than 10 hearts of damage in one blow"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 65
+  },
+  "criteria": {
+    "overkill": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 20
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "overkill"
+    ]
+  ]
+}

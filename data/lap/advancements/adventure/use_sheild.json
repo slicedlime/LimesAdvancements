@@ -1,0 +1,76 @@
+{
+  "parent": "lap:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:shield",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.story.deflect_arrow.title"
+    },
+    "description": {
+      "translate": "Use a shield to deflect a melee attack, an arrow and an explosion"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "deflected_projectile": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_projectile": true
+          },
+          "blocked": true
+        }
+      }
+    },
+    "deflected_explosion": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_explosion": true
+          },
+          "blocked": true
+        }
+      }
+    },
+	"deflected_melee": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_projectile": false,
+			"is_fire": false,
+			"is_magic": false,
+			"is_lightning": false,
+			"is_explosion": false,
+			"source_entity": {
+			  "distance": {
+			    "absolute": {
+				  "max": 3
+				}
+			  }
+			}
+          },
+          "blocked": true
+        }
+      }
+	}
+  },
+  "requirements": [
+    [
+      "deflected_projectile"
+    ],
+	[
+	  "deflected_melee"
+	],
+	[
+	  "deflected_explosion"
+	]
+  ]
+}
