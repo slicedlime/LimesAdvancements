@@ -1,0 +1,54 @@
+{
+  "parent": "lap:village/trade_with_villager",
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald_block"
+    },
+    "title": {
+      "translate": "High Volume Trader"
+    },
+    "description": {
+      "translate": "Exhaust a villager's trade offering"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "traded16": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+	    "villager": {
+		  "type": "minecraft:villager",
+		  "nbt": "{Offers:{Recipes:[{maxUses:16,uses:16}]}}"
+		}
+	  }
+    },
+    "traded12": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+	    "villager": {
+		  "type": "minecraft:villager",
+		  "nbt": "{Offers:{Recipes:[{maxUses:12,uses:12}]}}"
+		}
+	  }
+    },
+    "traded3": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+	    "villager": {
+		  "type": "minecraft:villager",
+		  "nbt": "{Offers:{Recipes:[{maxUses:3,uses:3}]}}"
+		}
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "traded16",
+      "traded12",
+      "traded3"
+    ]
+  ]
+}

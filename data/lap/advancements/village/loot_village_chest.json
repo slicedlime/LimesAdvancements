@@ -1,0 +1,37 @@
+{
+  "parent": "lap:village/find_village",
+  "display": {
+    "icon": {
+      "item": "minecraft:chest"
+    },
+    "title": {
+      "translate": "advancements.adventure.whos_the_pillager_now.title"
+    },
+    "description": {
+      "translate": "Loot a chest in a village"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "in_village": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "village"
+      }
+    },
+    "loot_chest": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "in_village"
+    ],
+    [
+      "loot_chest"
+    ]
+  ]
+}

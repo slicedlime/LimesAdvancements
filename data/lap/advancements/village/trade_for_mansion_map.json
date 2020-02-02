@@ -1,0 +1,37 @@
+{
+  "parent": "lap:village/trade_with_villager",
+  "display": {
+    "icon": {
+      "item": "minecraft:filled_map"
+    },
+    "title": {
+      "translate": "Maniac Mansion"
+    },
+    "description": {
+      "translate": "Trade for an explorer map to a woodland mansion"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "traded": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+	    "villager": {
+		  "type": "minecraft:villager"
+		},
+		"item": {
+		  "item": "minecraft:filled_map",
+			"nbt": "{display:{Name:\"{\\\"translate\\\":\\\"filled_map.mansion\\\"}\"}}"
+		}
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "traded"
+    ]
+  ]
+}

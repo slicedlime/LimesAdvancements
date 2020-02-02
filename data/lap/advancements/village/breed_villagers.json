@@ -1,0 +1,28 @@
+{
+  "parent": "lap:village/find_village",
+  "display": {
+    "icon": {
+      "item": "minecraft:bread"
+    },
+    "title": {
+      "translate": "In-bread Villager"
+    },
+    "description": {
+      "translate": "Make some villagers breed"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nope": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+	  "nope"
+    ]
+  ]
+}

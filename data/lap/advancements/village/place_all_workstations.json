@@ -1,0 +1,100 @@
+{
+  "parent": "lap:village/place_workstation",
+  "display": {
+    "icon": {
+      "item": "minecraft:fletching_table"
+    },
+    "title": {
+      "translate": "Work Force"
+    },
+    "description": {
+      "translate": "Employ one villager of each profession"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "armorer": {
+      "trigger": "minecraft:impossible"
+    },
+    "butcher": {
+      "trigger": "minecraft:impossible"
+    },
+    "cartographer": {
+      "trigger": "minecraft:impossible"
+    },
+    "cleric": {
+      "trigger": "minecraft:impossible"
+    },
+    "farmer": {
+      "trigger": "minecraft:impossible"
+    },
+    "fisherman": {
+      "trigger": "minecraft:impossible"
+    },
+    "fletcher": {
+      "trigger": "minecraft:impossible"
+    },
+    "leatherworker": {
+      "trigger": "minecraft:impossible"
+    },
+    "librarian": {
+      "trigger": "minecraft:impossible"
+    },
+    "mason": {
+      "trigger": "minecraft:impossible"
+    },
+    "shepherd": {
+      "trigger": "minecraft:impossible"
+    },
+    "toolsmith": {
+      "trigger": "minecraft:impossible"
+    },
+    "weaponsmith": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+	  "armorer"
+    ],
+    [
+	  "butcher"
+    ],
+    [
+	  "cartographer"
+    ],
+    [
+	  "cleric"
+    ],
+    [
+	  "farmer"
+    ],
+    [
+	  "fisherman"
+    ],
+    [
+	  "fletcher"
+    ],
+    [
+	  "leatherworker"
+    ],
+    [
+	  "librarian"
+    ],
+    [
+	  "mason"
+    ],
+    [
+	  "shepherd"
+    ],
+    [
+	  "toolsmith"
+    ],
+    [
+	  "weaponsmith"
+    ]
+  ]
+}

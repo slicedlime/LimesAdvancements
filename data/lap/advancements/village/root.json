@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:\"75cf97b1-4d89-4ac8-94e1-f85fac14871a\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RmYTA3ZmQxMjQ0ZWI4OTQ1ZjRlZGVkZDAwNDI2NzUwYjc3ZWY1ZGZiYWYwM2VkNzc1NjMzNDU5ZWNlNDE1YSJ9fX0=\"}]}}}"
+    },
+    "title": {
+      "translate": "Village & Pillage?"
+    },
+    "description": {
+      "translate": "There are other inhabitants of this world"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/block/oak_planks.png"
+  },
+  "criteria": {
+    "pillager_outpost": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "pillager_outpost"
+      }
+    },
+	"village": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "village"
+      }
+    },
+    "kill_pillager": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:pillager"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "pillager_outpost",
+	  "village",
+      "kill_pillager"
+    ]
+  ]
+}

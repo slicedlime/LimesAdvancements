@@ -37,5 +37,17 @@ function lap:check_totem
 # Shear snow golem
 function lap:check_snow_golem
 
+# Check close to villager / pillager
+function lap:check_villager
+
 # Check for portal creation
 function lap:check_for_portals
+
+# Village / Pillage chests
+function lap:check_chests
+
+# Villager breeding tracking
+function lap:check_breeding
+
+# Work site placement
+function lap:check_work_sites
