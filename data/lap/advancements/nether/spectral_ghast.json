@@ -1,0 +1,38 @@
+{
+  "parent": "lap:nether/in_nether",
+  "display": {
+    "icon": {
+      "item": "minecraft:spectral_arrow"
+    },
+    "title": {
+      "translate": "Ghastbusters"
+    },
+    "description": {
+      "translate": "Shoot a ghast with a spectral arrow"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shot_arrow": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+		  "type": {
+            "is_projectile": true,
+            "direct_entity": {
+              "type": "minecraft:spectral_arrow"
+            }
+		  }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shot_arrow"
+    ]
+  ]
+}

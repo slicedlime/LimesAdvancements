@@ -1,0 +1,58 @@
+{
+  "parent": "lap:nether/in_nether",
+  "display": {
+    "icon": {
+      "item": "minecraft:shroomlight"
+    },
+    "title": {
+      "translate": "Hot Tourist Destinations"
+    },
+    "description": {
+      "translate": "Visit all the nether biomes"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "minecraft:nether_wastes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "minecraft:nether_wastes"
+      }
+    },
+    "minecraft:soul_sand_valley": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "minecraft:soul_sand_valley"
+      }
+    },
+    "minecraft:crimson_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "minecraft:crimson_forest"
+      }
+    },
+    "minecraft:warped_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "minecraft:warped_forest"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "minecraft:nether_wastes"
+    ],
+    [
+      "minecraft:soul_sand_valley"
+    ],
+    [
+      "minecraft:crimson_forest"
+    ],
+    [
+      "minecraft:warped_forest"
+    ]
+  ]
+}

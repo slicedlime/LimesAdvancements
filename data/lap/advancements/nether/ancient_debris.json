@@ -1,0 +1,35 @@
+{
+  "parent": "lap:nether/in_nether",
+  "display": {
+    "icon": {
+      "item": "minecraft:ancient_debris"
+    },
+    "title": {
+      "translate": "Hidden in the Depths"
+    },
+    "description": {
+      "translate": "Mine a piece of ancient debris hidden in the depths of the nether"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ancient_debris": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:ancient_debris"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ancient_debris"
+    ]
+  ]
+}
