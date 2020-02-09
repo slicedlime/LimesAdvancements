@@ -20,11 +20,9 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "killing_blow": {
-          "type": {
-            "is_projectile": true,
-            "direct_entity": {
-              "type": "#minecraft:arrows"
-            }
+          "is_projectile": true,
+          "direct_entity": {
+            "type": "#minecraft:arrows"
           }
         }
       }
