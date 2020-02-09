@@ -51,6 +51,12 @@ function lap:check_breeding
 
 # Work site placement
 function lap:check_work_sites
+
+# Dancing parrots
+execute as @a[scores={lap_music_disc=1}] at @s run function lap:music_disc_played
+
 # Bell ringing
 function lap:bell
 
+# Campfire cooking
+execute as @a[scores={lap_campfire=1}] run function lap:campfire_cook

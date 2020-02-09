@@ -27,3 +27,5 @@ scoreboard objectives add lap_worksite_11 minecraft.used:minecraft.loom "Placed 
 scoreboard objectives add lap_worksite_12 minecraft.used:minecraft.smithing_table "Placed smithing table"
 scoreboard objectives add lap_worksite_13 minecraft.used:minecraft.grindstone "Placed grindstone"
 scoreboard objectives add lap_bell minecraft.custom:minecraft.bell_ring "Bells Rung"
+scoreboard objectives add lap_music_disc minecraft.custom:minecraft.play_record "Discs Played"
+scoreboard objectives add lap_campfire minecraft.custom:minecraft.interact_with_campfire "Cook on campfire"

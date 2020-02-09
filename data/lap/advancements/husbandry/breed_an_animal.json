@@ -1,0 +1,29 @@
+{
+  "parent": "lap:husbandry/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:wheat"
+    },
+    "title": {
+      "translate": "The Parrots and the Bees"
+    },
+    "description": {
+      "translate": "advancements.husbandry.breed_an_animal.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bred": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "bred"
+    ]
+  ]
+}

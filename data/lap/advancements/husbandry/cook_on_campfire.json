@@ -1,0 +1,28 @@
+{
+  "parent": "lap:husbandry/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:campfire"
+    },
+    "title": {
+	  "translate": "Camping!"
+	},
+    "description": {
+      "translate": "Cook food on a camp fire"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+	  "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

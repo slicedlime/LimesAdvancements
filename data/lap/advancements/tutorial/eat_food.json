@@ -29,5 +29,8 @@
     [
       "eat"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "lap:open_husbandry"
+  }
 }

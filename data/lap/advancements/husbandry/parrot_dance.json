@@ -1,0 +1,28 @@
+{
+  "parent": "lap:husbandry/tame_an_animal",
+  "display": {
+    "icon": {
+      "item": "minecraft:jukebox"
+    },
+    "title": {
+	  "translate": "Party Parrot"
+	},
+    "description": {
+      "translate": "Make a parrot dance"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+	  "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

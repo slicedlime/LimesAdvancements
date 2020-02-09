@@ -1,0 +1,99 @@
+{
+  "parent": "lap:husbandry/tame_an_animal",
+  "display": {
+    "icon": {
+      "item": "minecraft:lead"
+    },
+    "title": {
+      "translate": "Pet Master"
+    },
+    "description": {
+      "translate": "Tame all tamable animals"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cat": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+	    "entity": {
+		  "type": "minecraft:cat"
+		}
+	  }
+    },
+	"dog": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+	    "entity": {
+		  "type": "minecraft:wolf"
+		}
+	  }
+    },
+	"donkey": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+	    "entity": {
+		  "type": "minecraft:donkey"
+		}
+	  }
+    },
+	"horse": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+	    "entity": {
+		  "type": "minecraft:horse"
+		}
+	  }
+    },
+	"llama": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+	    "entity": {
+		  "type": "minecraft:llama"
+		}
+	  }
+    },
+	"mule": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+	    "entity": {
+		  "type": "minecraft:mule"
+		}
+	  }
+    },
+	"parrot": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+	    "entity": {
+		  "type": "minecraft:parrot"
+		}
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "cat"
+    ],
+	[
+	  "dog"
+	],
+	[
+	  "donkey"
+	],
+	[
+	  "horse"
+	],
+	[
+	  "llama"
+	],
+	[
+	  "mule"
+	],
+	[
+	  "parrot"
+	]
+  ]
+}
