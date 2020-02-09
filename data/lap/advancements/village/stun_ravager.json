@@ -1,0 +1,38 @@
+{
+  "parent": "lap:village/start_a_raid",
+  "display": {
+    "icon": {
+      "item": "minecraft:shield"
+    },
+    "title": {
+      "translate": "Snooze"
+    },
+    "description": {
+      "translate": "Stun a ravager"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stunned_ravager": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+			  "type": "minecraft:ravager"
+			}
+          },
+          "blocked": true
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "stunned_ravager"
+    ]
+  ]
+}

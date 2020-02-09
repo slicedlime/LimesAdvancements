@@ -1,0 +1,37 @@
+{
+  "parent": "lap:village/start_a_raid",
+  "display": {
+    "icon": {
+      "item": "minecraft:bell"
+    },
+    "title": {
+      "translate": "For Whom the Bell Tolls"
+    },
+    "description": {
+      "translate": "Ring the village bell during a raid"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "in_village": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "village"
+      }
+    },
+    "bell": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "bell"
+    ],
+    [
+      "in_village"
+    ]
+  ]
+}

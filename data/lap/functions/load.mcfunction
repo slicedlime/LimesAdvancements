@@ -9,6 +9,8 @@ scoreboard objectives add lap_fall_dist dummy "Fall Distance"
 scoreboard objectives add lap_mob_kills minecraft.custom:minecraft.mob_kills "Mob Kills"
 scoreboard objectives add lap_chest minecraft.custom:minecraft.open_chest "Chest interactions"
 scoreboard objectives add lap_in_village dummy "In Village Status"
+scoreboard objectives add lap_in_village2 dummy "In Village Status"
+scoreboard objectives add lap_in_outpost dummy "In Outpost Status"
 
 # Work site scoreboards
 scoreboard objectives add lap_worksite_1 minecraft.used:minecraft.blast_furnace "Placed blast furnace"
@@ -24,3 +26,4 @@ scoreboard objectives add lap_worksite_10 minecraft.used:minecraft.stonecutter "
 scoreboard objectives add lap_worksite_11 minecraft.used:minecraft.loom "Placed loom"
 scoreboard objectives add lap_worksite_12 minecraft.used:minecraft.smithing_table "Placed smithing table"
 scoreboard objectives add lap_worksite_13 minecraft.used:minecraft.grindstone "Placed grindstone"
+scoreboard objectives add lap_bell minecraft.custom:minecraft.bell_ring "Bells Rung"

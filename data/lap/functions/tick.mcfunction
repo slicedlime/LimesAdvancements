@@ -51,3 +51,6 @@ function lap:check_breeding
 
 # Work site placement
 function lap:check_work_sites
+# Bell ringing
+function lap:bell
+

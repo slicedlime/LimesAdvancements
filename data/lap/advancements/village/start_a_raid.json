@@ -1,0 +1,28 @@
+{
+  "parent": "lap:village/kill_pillager_captain",
+  "display": {
+    "icon": {
+      "item": "minecraft:crossbow"
+    },
+    "title": {
+      "translate": "Under Siege"
+    },
+    "description": {
+      "translate": "Go to a village with the Bad Omen effect to start a raid on the village"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "voluntary_exile": {
+      "trigger": "minecraft:voluntary_exile"
+    }
+  },
+  "requirements": [
+    [
+      "voluntary_exile"
+    ]
+  ]
+}
