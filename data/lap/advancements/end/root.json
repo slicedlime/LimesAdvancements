@@ -1,0 +1,57 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:end_stone"
+    },
+    "title": {
+      "translate": "The End"
+    },
+    "description": {
+      "translate": "One more dimension to go"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/end.png"
+  },
+  "criteria": {
+    "ender_pearl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:ender_pearl"
+          }
+        ]
+      }
+    },
+    "blaze_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blaze_rod"
+          }
+        ]
+      }
+    },
+    "entered_end": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_end"
+      }
+    }
+
+  },
+  "requirements": [
+    [
+      "ender_pearl",
+	  "entered_end"
+    ],
+    [
+      "blaze_rod",
+	  "entered_end"
+    ]
+  ]
+}

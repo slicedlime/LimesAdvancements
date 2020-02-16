@@ -1,0 +1,30 @@
+{
+  "parent": "lap:end/portal",
+  "display": {
+    "icon": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "title": {
+      "translate": "Cover Your Eyes"
+    },
+    "description": {
+      "translate": "Wear a pumpkin as a helmet in the end"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

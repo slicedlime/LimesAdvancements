@@ -1,0 +1,30 @@
+{
+  "parent": "lap:end/elytra",
+  "display": {
+    "icon": {
+      "item": "minecraft:firework_rocket"
+    },
+    "title": {
+      "translate": "Fly Away With Me"
+    },
+    "description": {
+      "translate": "Use a firework rocket to boost your flight"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

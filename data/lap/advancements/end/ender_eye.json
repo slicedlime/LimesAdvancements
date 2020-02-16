@@ -1,0 +1,30 @@
+{
+  "parent": "lap:end/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:ender_eye"
+    },
+    "title": {
+      "translate": "Don't Blink"
+    },
+    "description": {
+      "translate": "Throw an ender eye to lead the way"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ender_eye": {
+      "trigger": "minecraft:used_ender_eye",
+      "conditions": {
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ender_eye"
+    ]
+  ]
+}

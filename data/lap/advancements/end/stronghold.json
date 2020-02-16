@@ -1,0 +1,31 @@
+{
+  "parent": "lap:end/ender_eye",
+  "display": {
+    "icon": {
+      "item": "minecraft:mossy_stone_bricks"
+    },
+    "title": {
+      "translate": "Endgame"
+    },
+    "description": {
+      "translate": "Follow the eye. No, not your eyes. The Eye."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stronghold": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "feature": "stronghold"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "stronghold"
+    ]
+  ]
+}

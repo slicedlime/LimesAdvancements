@@ -29,3 +29,7 @@ scoreboard objectives add lap_worksite_13 minecraft.used:minecraft.grindstone "P
 scoreboard objectives add lap_bell minecraft.custom:minecraft.bell_ring "Bells Rung"
 scoreboard objectives add lap_music_disc minecraft.custom:minecraft.play_record "Discs Played"
 scoreboard objectives add lap_campfire minecraft.custom:minecraft.interact_with_campfire "Cook on campfire"
+
+scoreboard objectives add lap_ender_eye minecraft.used:minecraft.ender_eye "Eye of Ender Used"
+scoreboard objectives add lap_ender_chest minecraft.mined:minecraft.ender_chest "Ender Chest Mined"
+scoreboard objectives add lap_scratch dummy "Temp Space"

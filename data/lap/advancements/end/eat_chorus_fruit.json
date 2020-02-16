@@ -1,0 +1,35 @@
+{
+  "parent": "lap:end/portal",
+  "display": {
+    "icon": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "title": {
+      "translate": "Dine Like An Enderman"
+    },
+    "description": {
+      "translate": "Eat a chorus fruit"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chorus_fruit": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chorus_fruit"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chorus_fruit"
+    ]
+  ]
+}

@@ -60,3 +60,18 @@ function lap:bell
 
 # Campfire cooking
 execute as @a[scores={lap_campfire=1}] run function lap:campfire_cook
+
+# End Portals
+function lap:check_for_end_portals
+
+# Ender chest + silk touch
+function lap:check_ender_chests
+
+# Wearing pumpkins
+advancement grant @a[advancements={lap:end/wear_pumpkin=false},nbt={Inventory:[{Slot:103b,id:"minecraft:carved_pumpkin"}],Dimension:1}] only lap:end/wear_pumpkin
+
+# Check end gateways
+function lap:check_end_gw
+
+# Flying with rockets
+execute as @a[nbt={FallFlying:1b}] at @s if entity @e[type=minecraft:firework_rocket,distance=..1] run advancement grant @s only lap:end/fly_with_fireworks

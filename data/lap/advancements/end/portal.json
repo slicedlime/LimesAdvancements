@@ -1,0 +1,37 @@
+{
+  "parent": "lap:end/stronghold",
+  "display": {
+    "icon": {
+      "item": "minecraft:end_portal_frame"
+    },
+    "title": {
+      "translate": "The Beginning of the End"
+    },
+    "description": {
+      "translate": "Use ender eyes to activate an end portal"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
+    },
+    "entered_end": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_end"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "impossible",
+      "entered_end"
+    ]
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "lap:end/portal",
+  "display": {
+    "icon": {
+      "item": "minecraft:end_crystal"
+    },
+    "title": {
+      "translate": "Go For the Healer"
+    },
+    "description": {
+      "translate": "Take out a crystal healing the dragon"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "killed_crystal": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:end_crystal"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed_crystal"
+    ]
+  ]
+}

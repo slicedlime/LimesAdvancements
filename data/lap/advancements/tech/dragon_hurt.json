@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:dragon_head"
+    },
+    "title": {
+	  "translate": ""
+	},
+    "description": {
+      "translate": ""
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "dragon_hurt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+	    "entity": {
+		  "type": "minecraft:ender_dragon"
+		}
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "dragon_hurt"
+    ]
+  ],
+  "rewards": {
+    "function": "lap:dragon_hurt"
+  }
+}

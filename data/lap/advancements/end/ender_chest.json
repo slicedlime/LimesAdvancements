@@ -1,0 +1,31 @@
+{
+  "parent": "lap:end/ender_eye",
+  "display": {
+    "icon": {
+      "item": "minecraft:ender_chest"
+    },
+    "title": {
+      "translate": "Pocket Dimension"
+    },
+    "description": {
+      "translate": "Place an ender chest to access your personal trans-dimensional storage"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ender_chest": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:ender_chest"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ender_chest"
+    ]
+  ]
+}

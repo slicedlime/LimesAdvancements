@@ -1,0 +1,48 @@
+{
+  "parent": "lap:end/find_end_city",
+  "display": {
+    "icon": {
+      "item": "minecraft:shulker_box"
+    },
+    "title": {
+      "translate": "Storage, Pocket Edition"
+    },
+    "description": {
+      "translate": "Kill some shulkers, make a box"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shulker_shell": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+	    "items": [
+		  {
+  		    "item": "minecraft:shulker_shell"
+		  }
+		]
+      }
+    },
+	"shulker_box": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+	    "items": [
+		  {
+		    "item": "minecraft:shulker_box"
+		  }
+		]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shulker_shell"
+    ],
+	[
+	  "shulker_box"
+	]
+  ]
+}
