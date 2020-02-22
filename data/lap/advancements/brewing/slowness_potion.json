@@ -1,0 +1,37 @@
+{
+  "parent": "lap:brewing/corrupt_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Potion:\"minecraft:slowness\"}"
+    },
+    "title": {
+      "translate": "Slowpoke"
+    },
+    "description": {
+      "translate": "Brew a slowness potion from a swiftness or leaping potion"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "potion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:slowness\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "potion"
+    ]
+  ]
+}

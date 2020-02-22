@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:brewing_stand"
+    },
+    "title": {
+      "translate": "Brewing"
+    },
+    "description": {
+      "translate": "It's an al kind of chemistry"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/block/nether_wart_block.png"
+  },
+  "criteria": {
+    "blaze_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blaze_rod"
+          }
+        ]
+      }
+    },
+	"brewing_stand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:brewing_stand"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blaze_rod",
+	  "brewing_stand"
+    ]
+  ]
+}

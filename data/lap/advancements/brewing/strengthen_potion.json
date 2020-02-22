@@ -1,0 +1,132 @@
+{
+  "parent": "lap:brewing/awkward_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "title": {
+      "translate": "Moar Power!"
+    },
+    "description": {
+      "translate": "Strengthen the effect of a potion using glowstone dust"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "swiftness": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:strong_swiftness\"}"
+          }
+        ]
+      }
+    },
+    "slowness": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:strong_slowness\"}"
+          }
+        ]
+      }
+    },
+    "leaping": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:strong_leaping\"}"
+          }
+        ]
+      }
+    },
+    "strength": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:strong_strength\"}"
+          }
+        ]
+      }
+    },
+    "healing": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:strong_healing\"}"
+          }
+        ]
+      }
+    },
+    "harming": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:strong_harming\"}"
+          }
+        ]
+      }
+    },
+    "poison": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:strong_poison\"}"
+          }
+        ]
+      }
+    },
+    "regeneration": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:strong_regeneration\"}"
+          }
+        ]
+      }
+    },
+    "turtle_master": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:strong_turtle_master\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "swiftness",
+	  "slowness",
+	  "leaping",
+	  "strength",
+	  "healing",
+	  "harming",
+	  "poison",
+	  "regeneration",
+	  "turtle_master"
+    ]
+  ]
+}

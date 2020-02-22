@@ -1,0 +1,35 @@
+{
+  "parent": "lap:brewing/splash_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:dragon_breath"
+    },
+    "title": {
+      "translate": "Cloudy"
+    },
+    "description": {
+      "translate": "Turn a splash potion into a lingering potion"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "potion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lingering_potion"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "potion"
+    ]
+  ]
+}

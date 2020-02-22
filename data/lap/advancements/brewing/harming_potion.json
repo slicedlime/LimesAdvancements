@@ -1,0 +1,37 @@
+{
+  "parent": "lap:brewing/corrupt_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Potion:\"minecraft:harming\"}"
+    },
+    "title": {
+      "translate": "Oof"
+    },
+    "description": {
+      "translate": "Brew a harming potion from a healing or poison potion"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "potion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:harming\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "potion"
+    ]
+  ]
+}

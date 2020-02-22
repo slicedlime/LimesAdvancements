@@ -1,0 +1,36 @@
+{
+  "parent": "lap:brewing/water_bottle",
+  "display": {
+    "icon": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "title": {
+      "translate": "Do You Even Lift?"
+    },
+    "description": {
+      "translate": "Brew a weakness potion from a water bottle"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "water_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:weakness\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "water_bottle"
+    ]
+  ]
+}

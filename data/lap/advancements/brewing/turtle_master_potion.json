@@ -1,0 +1,36 @@
+{
+  "parent": "lap:brewing/awkward_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:turtle_helmet"
+    },
+    "title": {
+      "translate": "Slow And Steady"
+    },
+    "description": {
+      "translate": "Brew a turtle master potion from an awkward potion"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "potion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:turtle_master\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "potion"
+    ]
+  ]
+}

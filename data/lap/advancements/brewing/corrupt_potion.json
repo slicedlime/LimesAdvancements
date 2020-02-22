@@ -1,0 +1,60 @@
+{
+  "parent": "lap:brewing/awkward_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "title": {
+      "translate": "Corruption!"
+    },
+    "description": {
+      "translate": "Corrupt a potion's effect using a fermented spider eye"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "slowness_potion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:slowness\"}"
+          }
+        ]
+      }
+    },
+    "harming_potion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:harming\"}"
+          }
+        ]
+      }
+    },
+    "invisibility_potion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:invisibility\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "slowness_potion",
+	  "harming_potion",
+	  "invisibility_potion"
+    ]
+  ]
+}

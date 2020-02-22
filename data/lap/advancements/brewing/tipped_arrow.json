@@ -1,0 +1,36 @@
+{
+  "parent": "lap:brewing/lingering_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:tipped_arrow",
+      "nbt": "{Potion:\"minecraft:weakness\"}"
+    },
+    "title": {
+      "translate": "The Tipping Point"
+    },
+    "description": {
+      "translate": "Tip arrows with a potion effect"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "potion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:tipped_arrow"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "potion"
+    ]
+  ]
+}

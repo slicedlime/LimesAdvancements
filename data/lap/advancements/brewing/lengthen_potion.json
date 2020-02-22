@@ -1,0 +1,180 @@
+{
+  "parent": "lap:brewing/awkward_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:redstone"
+    },
+    "title": {
+      "translate": "Mine Is Longer"
+    },
+    "description": {
+      "translate": "Lengthen the duration of a potion's effect using redstone"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "swiftness": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_swiftness\"}"
+          }
+        ]
+      }
+    },
+    "slowness": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_slowness\"}"
+          }
+        ]
+      }
+    },
+    "leaping": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_leaping\"}"
+          }
+        ]
+      }
+    },
+    "strength": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_strength\"}"
+          }
+        ]
+      }
+    },
+    "poison": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_poison\"}"
+          }
+        ]
+      }
+    },
+    "regeneration": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_regeneration\"}"
+          }
+        ]
+      }
+    },
+    "fire_resistance": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_fire_resistance\"}"
+          }
+        ]
+      }
+    },
+    "water_breathing": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_water_breathing\"}"
+          }
+        ]
+      }
+    },
+    "night_vision": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_night_vision\"}"
+          }
+        ]
+      }
+    },
+    "invisibility": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_invisibility\"}"
+          }
+        ]
+      }
+    },
+    "turtle_master": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_turtle_master\"}"
+          }
+        ]
+      }
+    },
+    "slow_falling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_slow_falling\"}"
+          }
+        ]
+      }
+    },
+    "weakness": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:long_weakness\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "swiftness",
+	  "slowness",
+	  "leaping",
+	  "strength",
+	  "poison",
+	  "regeneration",
+	  "fire_resistance",
+	  "water_breathing",
+	  "night_vision",
+	  "invisibility",
+	  "turtle_master",
+	  "slow_falling",
+	  "weakness"
+    ]
+  ]
+}
