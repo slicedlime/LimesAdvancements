@@ -1,0 +1,41 @@
+{
+  "parent": "lap:enchanting/enchant_item",
+  "display": {
+    "icon": {
+      "item": "minecraft:elytra",
+	  "nbt": "{Damage:431,Enchantments:[{id:\"minecraft:mending\"}]}"
+    },
+    "title": {
+      "translate": "On The Mend"
+    },
+    "description": {
+      "translate": "Repair an item with Mending"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mended_item": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "delta": {
+          "min": 1
+        },
+        "item": {
+          "enchantments": [
+            {
+              "enchantment": "minecraft:mending"
+            }
+          ]
+        }
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "mended_item"
+    ]
+  ]
+}

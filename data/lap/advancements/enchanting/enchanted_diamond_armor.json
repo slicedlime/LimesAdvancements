@@ -1,0 +1,79 @@
+{
+  "parent": "lap:enchanting/enchant_item",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_chestplate",
+      "nbt": "{Damage:0,Enchantments:[{lvl:3s, id:\"minecraft:protection\"}]}"
+    },
+    "title": {
+      "translate": "Oooh, Shiny!"
+    },
+    "description": {
+      "translate": "Wear a full suit of enchanted diamond armor"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "diamond_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_helmet",
+            "nbt": "{Enchantments:[{}]}"
+          }
+        ]
+      }
+    },
+    "diamond_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_chestplate",
+            "nbt": "{Enchantments:[{}]}"
+          }
+        ]
+      }
+    },
+    "diamond_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_leggings",
+            "nbt": "{Enchantments:[{}]}"
+          }
+        ]
+      }
+    },
+    "diamond_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_boots",
+            "nbt": "{Enchantments:[{}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diamond_helmet"
+	],
+	[
+      "diamond_chestplate"
+	],
+	[
+      "diamond_leggings"
+	],
+	[
+      "diamond_boots"
+    ]
+  ]
+}

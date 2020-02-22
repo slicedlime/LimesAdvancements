@@ -1,5 +1,5 @@
 {
-  "parent": "lap:precious/enchant_item",
+  "parent": "lap:enchanting/enchant_item",
   "display": {
     "icon": {
       "item": "minecraft:bookshelf"

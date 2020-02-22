@@ -1,14 +1,14 @@
 {
-  "parent": "lap:iron_age/smelt_iron",
+  "parent": "lap:enchanting/enchant_item",
   "display": {
     "icon": {
-      "item": "minecraft:anvil"
+      "item": "minecraft:ice"
     },
     "title": {
-      "translate": "Smithy"
+      "translate": "Ice Ice Baby"
     },
     "description": {
-      "translate": "Craft an Anvil"
+      "translate": "Use Silk Touch to obtain any form of ice"
     },
     "frame": "task",
     "show_toast": true,
@@ -16,20 +16,20 @@
     "hidden": false
   },
   "criteria": {
-    "anvil": {
+    "get_ice": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [
-          {
-            "item": "minecraft:anvil"
-          }
-        ]
-      }
+	    "items": [
+		  {
+		    "tag": "lap:ice"
+		  }
+		]
+	  }
     }
   },
   "requirements": [
     [
-      "anvil"
+      "get_ice"
     ]
   ]
 }

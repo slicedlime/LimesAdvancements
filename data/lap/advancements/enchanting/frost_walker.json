@@ -1,0 +1,31 @@
+{
+  "parent": "lap:enchanting/enchant_item",
+  "display": {
+    "icon": {
+      "item": "minecraft:leather_boots",
+      "nbt": "{display:{color:10412543},Enchantments:[{id:\"minecraft:frost_walker\"}]}"
+    },
+    "title": {
+      "translate": "On Thin Ice"
+    },
+    "description": {
+      "translate": "Use Frost Walker to walk on water"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

@@ -10,7 +10,7 @@
     "description": {
       "translate": "Make a full set of netherite armor"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

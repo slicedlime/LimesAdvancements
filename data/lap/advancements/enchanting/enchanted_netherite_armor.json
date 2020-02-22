@@ -1,0 +1,223 @@
+{
+  "parent": "lap:enchanting/enchanted_diamond_armor",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_chestplate",
+      "nbt": "{Damage:0,Enchantments:[{lvl:3s, id:\"minecraft:protection\"}]}"
+    },
+    "title": {
+      "translate": "OP Armor"
+    },
+    "description": {
+      "translate": "Wear a full suit of netherite armor enchanted fully with maximum level unbreaking, mending, feather falling, respiration, aqua affinity and any type of protection"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "protection_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_helmet",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"},{lvl:3s,id:\"minecraft:respiration\"},{id:\"minecraft:aqua_affinity\"}]}"
+          }
+        ]
+      }
+    },
+    "blast_protection_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_helmet",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:blast_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"},{lvl:3s,id:\"minecraft:respiration\"},{id:\"minecraft:aqua_affinity\"}]}"
+          }
+        ]
+      }
+    },
+    "fire_protection_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_helmet",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:fire_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"},{lvl:3s,id:\"minecraft:respiration\"},{id:\"minecraft:aqua_affinity\"}]}"
+          }
+        ]
+      }
+    },
+    "projectile_protection_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_helmet",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:projectile_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"},{lvl:3s,id:\"minecraft:respiration\"},{id:\"minecraft:aqua_affinity\"}]}"
+          }
+        ]
+      }
+    },
+    "protection_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_chestplate",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "blast_protection_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_chestplate",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:blast_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "fire_protection_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_chestplate",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:fire_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "projectile_protection_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_chestplate",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:projectile_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "protection_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_leggings",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "blast_protection_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_leggings",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:blast_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "fire_protection_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_leggings",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:fire_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "projectile_protection_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_leggings",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:projectile_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "protection_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_boots",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:feather_falling\"},{lvl:4s,id:\"minecraft:protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "blast_protection_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_boots",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:feather_falling\"},{lvl:4s,id:\"minecraft:blast_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "fire_protection_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_boots",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:feather_falling\"},{lvl:4s,id:\"minecraft:fire_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    },
+    "projectile_protection_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherite_boots",
+            "nbt": "{Enchantments:[{lvl:4s,id:\"minecraft:feather_falling\"},{lvl:4s,id:\"minecraft:projectile_protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{id:\"minecraft:mending\"}]}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "protection_helmet",
+	  "blast_protection_helmet",
+	  "fire_protection_helmet",
+	  "projectile_protection_helmet"
+	],
+	[
+      "protection_chestplate",
+	  "blast_protection_chestplate",
+	  "fire_protection_chestplate",
+	  "projectile_protection_chestplate"
+	],
+	[
+      "protection_leggings",
+	  "blast_protection_leggings",
+	  "fire_protection_leggings",
+	  "projectile_protection_leggings"
+	],
+	[
+      "protection_boots",
+	  "blast_protection_boots",
+	  "fire_protection_boots",
+	  "projectile_protection_boots"
+    ]
+  ]
+}

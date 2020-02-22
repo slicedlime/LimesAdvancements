@@ -1,5 +1,5 @@
 {
-  "parent": "lap:precious/obsidian",
+  "parent": "lap:enchanting/root",
   "display": {
     "icon": {
       "item": "minecraft:enchanted_book"

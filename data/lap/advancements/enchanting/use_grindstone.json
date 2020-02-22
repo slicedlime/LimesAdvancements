@@ -1,0 +1,29 @@
+{
+  "parent": "lap:enchanting/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:grindstone"
+    },
+    "title": {
+      "translate": "Grinding For Levels"
+    },
+    "description": {
+      "translate": "Use a grindstone, it can reclaim some experience from an enchanted item"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

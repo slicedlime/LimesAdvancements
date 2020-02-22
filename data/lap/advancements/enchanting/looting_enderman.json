@@ -1,0 +1,44 @@
+{
+  "parent": "lap:enchanting/enchant_item",
+  "display": {
+    "icon": {
+      "item": "minecraft:ender_pearl"
+    },
+    "title": {
+      "translate": "Pearls o' Plenty"
+    },
+    "description": {
+      "translate": "Kill an enderman using a Looting III enchanted sword"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "looting_kill_mainhand": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+	    "killing_blow": {
+		  "source_entity": {
+		    "equipment": {
+			  "mainhand": {
+			    "enchantments": [
+				  {
+				    "enchantment": "minecraft:looting",
+					"levels": 3
+				  }
+				]
+			  }
+			}
+		  }
+		}
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "looting_kill_mainhand"
+    ]
+  ]
+}

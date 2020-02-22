@@ -75,3 +75,12 @@ function lap:check_end_gw
 
 # Flying with rockets
 execute as @a[nbt={FallFlying:1b}] at @s if entity @e[type=minecraft:firework_rocket,distance=..1] run advancement grant @s only lap:end/fly_with_fireworks
+
+# Grindstone usage
+advancement grant @a[advancements={lap:enchanting/use_grindstone=false},scores={lap_grindstone=1..}] only lap:enchanting/use_grindstone
+
+# Fortune diamonds
+function lap:fortune_diamonds
+
+# Check for frost walking
+execute as @a[advancements={lap:enchanting/frost_walker=false},nbt={Inventory:[{Slot:100b,tag:{Enchantments:[{id:"minecraft:frost_walker"}]}}]}] at @s if block ~ ~-1 ~ minecraft:frosted_ice run advancement grant @s only lap:enchanting/frost_walker

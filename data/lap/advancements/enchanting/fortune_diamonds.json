@@ -1,0 +1,29 @@
+{
+  "parent": "lap:enchanting/enchant_item",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond"
+    },
+    "title": {
+      "translate": "Cha-Ching!"
+    },
+    "description": {
+      "translate": "Mine diamonds using a Fortune III enchanted pickaxe"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

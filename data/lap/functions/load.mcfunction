@@ -33,3 +33,6 @@ scoreboard objectives add lap_campfire minecraft.custom:minecraft.interact_with_
 scoreboard objectives add lap_ender_eye minecraft.used:minecraft.ender_eye "Eye of Ender Used"
 scoreboard objectives add lap_ender_chest minecraft.mined:minecraft.ender_chest "Ender Chest Mined"
 scoreboard objectives add lap_scratch dummy "Temp Space"
+
+scoreboard objectives add lap_grindstone minecraft.custom:minecraft.interact_with_grindstone "Grindstones used"
+scoreboard objectives add lap_diamonds minecraft.mined:minecraft.diamond_ore "Mined diamond ore"
