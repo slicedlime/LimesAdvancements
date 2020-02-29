@@ -19,6 +19,14 @@
     "experience": 100
   },
   "criteria": {
+    "minecraft:blaze": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:blaze"
+        }
+      }
+    },
     "minecraft:cave_spider": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
@@ -27,19 +35,35 @@
         }
       }
     },
-    "minecraft:spider": {
+    "minecraft:creeper": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:spider"
+          "type": "minecraft:creeper"
         }
       }
     },
-    "minecraft:zombie_pigman": {
+    "minecraft:drowned": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:zombie_pigman"
+          "type": "minecraft:drowned"
+        }
+      }
+    },
+	"minecraft:elder_guardian": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:elder_guardian"
+        }
+      }
+	},
+    "minecraft:ender_dragon": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:ender_dragon"
         }
       }
     },
@@ -51,19 +75,11 @@
         }
       }
     },
-    "minecraft:blaze": {
+    "minecraft:endermite": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:blaze"
-        }
-      }
-    },
-    "minecraft:creeper": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "entity": {
-          "type": "minecraft:creeper"
+          "type": "minecraft:endermite"
         }
       }
     },
@@ -91,6 +107,14 @@
         }
       }
     },
+    "minecraft:hoglin": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:hoglin"
+        }
+      }
+    },
     "minecraft:husk": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
@@ -107,7 +131,39 @@
         }
       }
     },
-    "minecraft:shulker": {
+    "minecraft:phantom": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:phantom"
+        }
+      }
+    },
+    "minecraft:piglin": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:piglin"
+        }
+      }
+    },
+    "minecraft:pillager": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:pillager"
+        }
+      }
+    },
+    "minecraft:ravager": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:ravager"
+        }
+      }
+    },
+	    "minecraft:shulker": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
@@ -139,11 +195,27 @@
         }
       }
     },
-    "minecraft:stray": {
+    "minecraft:spider": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:spider"
+        }
+      }
+    },
+	"minecraft:stray": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
           "type": "minecraft:stray"
+        }
+      }
+    },
+	"minecraft:vex": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:vex"
         }
       }
     },
@@ -160,6 +232,14 @@
       "conditions": {
         "entity": {
           "type": "minecraft:witch"
+        }
+      }
+    },
+    "minecraft:wither": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:wither"
         }
       }
     },
@@ -187,114 +267,111 @@
         }
       }
     },
-    "minecraft:phantom": {
+    "minecraft:zombified_piglin": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:phantom"
-        }
-      }
-    },
-    "minecraft:drowned": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "entity": {
-          "type": "minecraft:drowned"
-        }
-      }
-    },
-    "minecraft:pillager": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "entity": {
-          "type": "minecraft:pillager"
-        }
-      }
-    },
-    "minecraft:ravager": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "entity": {
-          "type": "minecraft:ravager"
+          "type": "minecraft:zombified_piglin"
         }
       }
     }
   },
   "requirements": [
     [
-      "minecraft:cave_spider"
+        "minecraft:blaze"
     ],
     [
-      "minecraft:spider"
+        "minecraft:cave_spider"
     ],
     [
-      "minecraft:zombie_pigman"
+        "minecraft:creeper"
     ],
     [
-      "minecraft:enderman"
+        "minecraft:drowned"
+    ],
+	[
+        "minecraft:elder_guardian"
+    ],
+	[
+        "minecraft:ender_dragon"
     ],
     [
-      "minecraft:blaze"
+        "minecraft:enderman"
+    ],
+	[
+        "minecraft:endermite"
     ],
     [
-      "minecraft:creeper"
+        "minecraft:evoker"
     ],
     [
-      "minecraft:evoker"
+        "minecraft:ghast"
     ],
     [
-      "minecraft:ghast"
+        "minecraft:guardian"
     ],
     [
-      "minecraft:guardian"
+        "minecraft:hoglin"
     ],
     [
-      "minecraft:husk"
+        "minecraft:husk"
     ],
     [
-      "minecraft:magma_cube"
+        "minecraft:magma_cube"
     ],
     [
-      "minecraft:shulker"
+        "minecraft:phantom"
     ],
     [
-      "minecraft:silverfish"
+        "minecraft:piglin"
     ],
     [
-      "minecraft:skeleton"
+        "minecraft:pillager"
     ],
     [
-      "minecraft:slime"
+        "minecraft:ravager"
     ],
     [
-      "minecraft:stray"
+        "minecraft:shulker"
     ],
     [
-      "minecraft:vindicator"
+        "minecraft:silverfish"
     ],
     [
-      "minecraft:witch"
+        "minecraft:skeleton"
     ],
     [
-      "minecraft:wither_skeleton"
+        "minecraft:slime"
     ],
     [
-      "minecraft:zombie"
+        "minecraft:spider"
     ],
     [
-      "minecraft:zombie_villager"
+        "minecraft:stray"
+    ],
+	[
+        "minecraft:vex"
     ],
     [
-      "minecraft:phantom"
+        "minecraft:vindicator"
     ],
     [
-      "minecraft:drowned"
+        "minecraft:witch"
     ],
     [
-      "minecraft:pillager"
+        "minecraft:wither"
     ],
     [
-      "minecraft:ravager"
+        "minecraft:wither_skeleton"
+    ],
+    [
+        "minecraft:zombie"
+    ],
+    [
+        "minecraft:zombie_villager"
+    ],
+    [
+        "minecraft:zombified_piglin"
     ]
   ]
 }
