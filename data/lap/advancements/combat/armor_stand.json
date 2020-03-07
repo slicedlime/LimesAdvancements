@@ -1,0 +1,35 @@
+{
+  "parent": "lap:combat/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:armor_stand"
+    },
+    "title": {
+      "translate": "Show Off"
+    },
+    "description": {
+      "translate": "Make an armor stand to show off your fancy armor on"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "armor_stand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:armor_stand"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "armor_stand"
+    ]
+  ]
+}

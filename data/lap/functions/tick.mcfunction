@@ -84,3 +84,12 @@ function lap:fortune_diamonds
 
 # Check for frost walking
 execute as @a[advancements={lap:enchanting/frost_walker=false},nbt={Inventory:[{Slot:100b,tag:{Enchantments:[{id:"minecraft:frost_walker"}]}}]}] at @s if block ~ ~-1 ~ minecraft:frosted_ice run advancement grant @s only lap:enchanting/frost_walker
+
+# Creepers and splash potions
+function lap:creeper_splash
+
+# Map markers
+advancement grant @a[advancements={lap:adventure/map_marker=false},scores={lap_map_marker=1..}] only lap:adventure/map_marker
+
+# Check for maps being placed in item frames
+function lap:map_item_frames

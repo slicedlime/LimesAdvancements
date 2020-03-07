@@ -1,0 +1,37 @@
+{
+  "parent": "lap:combat/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:shield",
+	  "nbt": "{BlockEntityTag:{Base:12,Patterns:[{Color:8,Pattern:\"bo\"},{Color:15,Pattern:\"cre\"}]}}"
+    },
+    "title": {
+      "translate": "Paint It Up"
+    },
+    "description": {
+      "translate": "Customize a shield with a banner"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "decorated_shield": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:shield",
+			"nbt": "{BlockEntityTag:{}}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "decorated_shield"
+    ]
+  ]
+}

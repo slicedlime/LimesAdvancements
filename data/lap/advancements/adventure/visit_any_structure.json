@@ -1,22 +1,19 @@
 {
-  "parent": "lap:adventure/visit_any_structure",
+  "parent": "lap:adventure/root",
   "display": {
     "icon": {
-      "item": "minecraft:cartography_table"
+      "item": "minecraft:oak_door"
     },
     "title": {
-      "translate": "Tourist Trap"
+      "translate": "Explorer"
     },
     "description": {
-      "translate": "Visit all types of structures in the overworld"
+      "translate": "Find a structure in the overworld"
     },
-    "frame": "challenge",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
-  },
-  "rewards": {
-    "experience": 500
   },
   "criteria": {
     "desert_pyramid": {
@@ -94,39 +91,17 @@
   },
   "requirements": [
     [
-      "desert_pyramid"
-    ],
-    [
-      "igloo"
-    ],
-    [
-      "jungle_pyramid"
-    ],
-    [
-      "mansion"
-    ],
-    [
-      "mineshaft"
-    ],
-    [
-      "monument"
-    ],
-    [
-      "ocean_ruin"
-    ],
-    [
-      "pillager_outpost"
-    ],
-    [
-      "shipwreck"
-    ],
-    [
-      "stronghold"
-    ],
-    [
-      "swamp_hut"
-    ],
-    [
+      "desert_pyramid",
+      "igloo",
+      "jungle_pyramid",
+      "mansion",
+      "mineshaft",
+      "monument",
+      "ocean_ruin",
+      "pillager_outpost",
+      "shipwreck",
+      "stronghold",
+      "swamp_hut",
       "village"
     ]
   ]

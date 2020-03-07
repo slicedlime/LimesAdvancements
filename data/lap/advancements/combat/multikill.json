@@ -1,14 +1,15 @@
 {
-  "parent": "lap:adventure/kill_a_mob",
+  "parent": "lap:combat/kill_a_mob",
   "display": {
     "icon": {
-      "item": "minecraft:totem_of_undying"
+      "item": "minecraft:diamond_sword",
+      "nbt": "{Damage:0,Enchantments:[{lvl:3s, id:\"minecraft:sweeping_edge\"}]}"
     },
     "title": {
-      "translate": "Extra Life"
+      "translate": "Sweeping"
     },
     "description": {
-      "translate": "Some powerful artifacts can allow you to cheat death when held"
+      "translate": "Kill 10 mobs at once"
     },
     "frame": "task",
     "show_toast": true,

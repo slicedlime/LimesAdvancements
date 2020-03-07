@@ -1,5 +1,5 @@
 {
-  "parent": "lap:adventure/root",
+  "parent": "lap:combat/root",
   "display": {
     "icon": {
       "item": "minecraft:shield",

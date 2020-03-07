@@ -1,0 +1,28 @@
+{
+  "parent": "lap:combat/kill_a_mob",
+  "display": {
+    "icon": {
+      "item": "minecraft:creeper_head"
+    },
+    "title": {
+      "translate": "Creepy Clouds"
+    },
+    "description": {
+      "translate": "Throw a splash potion at a creeper and make it explode before the effect runs out"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

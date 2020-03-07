@@ -26,6 +26,9 @@
               "type": "minecraft:spectral_arrow"
             }
 		  }
+        },
+        "entity": {
+          "type": "minecraft:ghast"
         }
       }
     }

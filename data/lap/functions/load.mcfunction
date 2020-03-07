@@ -36,3 +36,8 @@ scoreboard objectives add lap_scratch dummy "Temp Space"
 
 scoreboard objectives add lap_grindstone minecraft.custom:minecraft.interact_with_grindstone "Grindstones used"
 scoreboard objectives add lap_diamonds minecraft.mined:minecraft.diamond_ore "Mined diamond ore"
+
+scoreboard objectives add lap_splash minecraft.used:minecraft.splash_potion "Threw Splash Potion"
+scoreboard objectives add lap_splash_id dummy "Creeper/Splash coupling"
+
+scoreboard objectives add lap_map_marker minecraft.used:minecraft.filled_map "Map Markers"

@@ -1,0 +1,35 @@
+{
+  "parent": "lap:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:map"
+    },
+    "title": {
+      "translate": "Cartographer"
+    },
+    "description": {
+      "translate": "Use a map to get an overview of the area"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "filled_map": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:filled_map"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "filled_map"
+    ]
+  ]
+}

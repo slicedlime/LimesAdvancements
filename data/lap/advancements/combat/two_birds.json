@@ -1,5 +1,5 @@
 {
-  "parent": "lap:adventure/arrow_kill",
+  "parent": "lap:combat/arrow_kill",
   "display": {
     "icon": {
       "item": "minecraft:crossbow",

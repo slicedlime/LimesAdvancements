@@ -1,0 +1,29 @@
+{
+  "parent": "lap:adventure/map",
+  "display": {
+    "icon": {
+      "item": "minecraft:blue_banner",
+	  "nbt": "{BlockEntityTag:{Patterns:[{Pattern:cbo,Color:0},{Pattern:ts,Color:15},{Pattern:bs,Color:15},{Pattern:glb,Color:5},{Pattern:bo,Color:15}]}}"
+    },
+    "title": {
+      "translate": "Point of Interest"
+    },
+    "description": {
+      "translate": "Make a map marker by using a map on a banner. Also try renaming the banner in an anvil beforehand"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}
