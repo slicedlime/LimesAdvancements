@@ -1,4 +1,4 @@
-{
+ {
   "parent": "lap:adventure/summon_snow_golem",
   "display": {
     "icon": {
@@ -9,7 +9,7 @@
       "translate": "Face Reveal"
     },
     "description": {
-      "translate": "Shear the pumpkin off a  snow golem"
+      "translate": "Shear the pumpkin off a snow golem"
     },
     "frame": "task",
     "show_toast": true,

@@ -1,16 +1,16 @@
 {
-  "parent": "lap:end/elytra",
+  "parent": "lap:adventure/root",
   "display": {
     "icon": {
-      "item": "minecraft:firework_rocket"
+      "item": "minecraft:minecart"
     },
     "title": {
-      "translate": "Fly Away With Me"
+      "translate": "Rock & Roll"
     },
     "description": {
-      "translate": "Use a firework rocket to boost your flight"
+      "translate": "Travel 1000 blocks in a single minecart ride"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

@@ -1,14 +1,14 @@
 {
-  "parent": "lap:adventure/map",
+  "parent": "lap:adventure/fly",
   "display": {
     "icon": {
-      "item": "minecraft:filled_map"
+      "item": "minecraft:lead"
     },
     "title": {
-      "translate": "Map Wall"
+      "translate": "Aerial Delivery"
     },
     "description": {
-      "translate": "Place a map in an item frame"
+      "translate": "Leash a mob and fly away"
     },
     "frame": "task",
     "show_toast": true,
@@ -17,7 +17,9 @@
   },
   "criteria": {
     "impossible": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
     }
   },
   "requirements": [

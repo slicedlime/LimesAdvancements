@@ -1,0 +1,35 @@
+{
+  "parent": "lap:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:item_frame"
+    },
+    "title": {
+      "translate": "Got Wings?"
+    },
+    "description": {
+      "translate": "You found some wings!"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "elytra": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:elytra"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "elytra"
+    ]
+  ]
+}

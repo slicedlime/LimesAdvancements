@@ -37,6 +37,9 @@ function lap:check_totem
 # Shear snow golem
 function lap:check_snow_golem
 
+# Shear sheep
+function lap:check_sheep
+
 # Check close to villager / pillager
 function lap:check_villager
 
@@ -73,8 +76,17 @@ advancement grant @a[advancements={lap:end/wear_pumpkin=false},nbt={Inventory:[{
 # Check end gateways
 function lap:check_end_gw
 
+# Gliding
+advancement grant @a[advancements={lap:adventure/fly=false},nbt={FallFlying:1b}] only lap:adventure/fly
+
 # Flying with rockets
-execute as @a[nbt={FallFlying:1b}] at @s if entity @e[type=minecraft:firework_rocket,distance=..1] run advancement grant @s only lap:end/fly_with_fireworks
+execute as @a[nbt={FallFlying:1b}] at @s if entity @e[type=minecraft:firework_rocket,distance=..1] run advancement grant @s only lap:adventure/fly_with_fireworks
+
+# Flying marathon distance
+function lap:check_flying_distance
+
+# Flying with mobs
+function lap:check_flying_mobs
 
 # Grindstone usage
 advancement grant @a[advancements={lap:enchanting/use_grindstone=false},scores={lap_grindstone=1..}] only lap:enchanting/use_grindstone
@@ -93,3 +105,15 @@ advancement grant @a[advancements={lap:adventure/map_marker=false},scores={lap_m
 
 # Check for maps being placed in item frames
 function lap:map_item_frames
+
+# Check for player riding skeleton horse
+advancement grant @a[advancements={lap:adventure/ride_skeleton_horse=false},nbt={RootVehicle:{Entity:{id:"minecraft:skeleton_horse"}}}] only lap:adventure/ride_skeleton_horse
+
+# Check for boat travel on ice
+execute as @a[nbt={RootVehicle:{Entity:{id:"minecraft:boat"}}}] at @s if block ~ ~-1 ~ #minecraft:ice run advancement grant @s only lap:adventure/boat_on_ice
+
+# Check for minecart travel distance
+function lap:minecart_travel
+
+# Check iron golem healing
+function lap:golem_healing

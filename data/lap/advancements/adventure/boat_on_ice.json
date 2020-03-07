@@ -1,14 +1,14 @@
 {
-  "parent": "lap:adventure/map",
+  "parent": "lap:adventure/root",
   "display": {
     "icon": {
-      "item": "minecraft:filled_map"
+      "item": "minecraft:oak_boat"
     },
     "title": {
-      "translate": "Map Wall"
+      "translate": "Warp Speed"
     },
     "description": {
-      "translate": "Place a map in an item frame"
+      "translate": "Travel in a boat on any type of ice"
     },
     "frame": "task",
     "show_toast": true,
@@ -17,7 +17,9 @@
   },
   "criteria": {
     "impossible": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
     }
   },
   "requirements": [

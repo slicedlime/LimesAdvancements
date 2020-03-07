@@ -1,23 +1,25 @@
 {
-  "parent": "lap:adventure/map",
+  "parent": "lap:adventure/fly_with_fireworks",
   "display": {
     "icon": {
-      "item": "minecraft:filled_map"
+      "item": "minecraft:feather"
     },
     "title": {
-      "translate": "Map Wall"
+      "translate": "Marathon Flight"
     },
     "description": {
-      "translate": "Place a map in an item frame"
+      "translate": "Fly 42195 blocks without landing"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
     "impossible": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
     }
   },
   "requirements": [

@@ -1,14 +1,14 @@
 {
-  "parent": "lap:adventure/map",
+  "parent": "lap:adventure/elytra",
   "display": {
     "icon": {
-      "item": "minecraft:filled_map"
+      "item": "minecraft:elytra"
     },
     "title": {
-      "translate": "Map Wall"
+      "translate": "Learn To Fly"
     },
     "description": {
-      "translate": "Place a map in an item frame"
+      "translate": "Glide using elytra"
     },
     "frame": "task",
     "show_toast": true,
@@ -17,7 +17,9 @@
   },
   "criteria": {
     "impossible": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
     }
   },
   "requirements": [

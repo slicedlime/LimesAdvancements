@@ -1,0 +1,46 @@
+{
+  "parent": "lap:village/trade_with_villager",
+  "display": {
+    "icon": {
+      "item": "minecraft:vine"
+    },
+    "title": {
+      "translate": "Rare Breeds"
+    },
+    "description": {
+      "translate": "Trade with a Jungle villager and a Swamp villager"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "swamp_villager": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+	    "villager": {
+		  "type": "minecraft:villager",
+          "nbt": "{VillagerData:{type:\"minecraft:swamp\"}}"
+		}
+	  }
+    },
+    "jungle_villager": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+	    "villager": {
+		  "type": "minecraft:villager",
+          "nbt": "{VillagerData:{type:\"minecraft:jungle\"}}"
+		}
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "swamp_villager"
+    ],
+    [
+      "jungle_villager"
+    ]
+  ]
+}

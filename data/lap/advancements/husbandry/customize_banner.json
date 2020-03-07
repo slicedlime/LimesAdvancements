@@ -1,0 +1,36 @@
+ {
+  "parent": "lap:husbandry/shear_sheep",
+  "display": {
+    "icon": {
+      "item": "minecraft:loom"
+    },
+    "title": {
+      "translate": "Looming"
+    },
+    "description": {
+      "translate": "Customize a banner in a loom"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "banner_with_layer": {
+      "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+	    "items": [
+		  {
+		    "tag": "minecraft:banners",
+			"nbt": "{BlockEntityTag:{Patterns:[{}]}}"
+		  }
+		]
+	  }
+    }
+  },
+  "requirements": [
+    [
+      "banner_with_layer"
+    ]
+  ]
+}

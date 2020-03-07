@@ -1,14 +1,14 @@
-{
-  "parent": "lap:adventure/map",
+ {
+  "parent": "lap:husbandry/root",
   "display": {
     "icon": {
-      "item": "minecraft:filled_map"
+      "item": "minecraft:shears"
     },
     "title": {
-      "translate": "Map Wall"
+      "translate": "A Close Shave"
     },
     "description": {
-      "translate": "Place a map in an item frame"
+      "translate": "Shear a sheep to get wool"
     },
     "frame": "task",
     "show_toast": true,
@@ -16,13 +16,13 @@
     "hidden": false
   },
   "criteria": {
-    "impossible": {
-      "trigger": "minecraft:impossible"
+    "never": {
+      "trigger": "impossible"
     }
   },
   "requirements": [
     [
-      "impossible"
+      "never"
     ]
   ]
 }

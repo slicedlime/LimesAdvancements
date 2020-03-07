@@ -41,3 +41,13 @@ scoreboard objectives add lap_splash minecraft.used:minecraft.splash_potion "Thr
 scoreboard objectives add lap_splash_id dummy "Creeper/Splash coupling"
 
 scoreboard objectives add lap_map_marker minecraft.used:minecraft.filled_map "Map Markers"
+
+scoreboard objectives add lap_fly_cm minecraft.custom:minecraft.aviate_one_cm "Flown cms"
+
+scoreboard objectives add lap_uuid_match dummy "UUID Matches"
+
+scoreboard objectives add lap_minecart_x dummy "Minecart boarding location X"
+scoreboard objectives add lap_minecart_y dummy "Minecart boarding location Y"
+scoreboard objectives add lap_minecart_z dummy "Minecart boarding location Z"
+
+scoreboard objectives add lap_golem_health dummy "Iron Golem Health"
