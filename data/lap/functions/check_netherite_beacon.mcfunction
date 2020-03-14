@@ -1,0 +1,2 @@
+# Check if a beacon is powered by netherite blocks
+execute if block ~-1 ~-1 ~-1 netherite_block if block ~-1 ~-1 ~ netherite_block if block ~-1 ~-1 ~1 netherite_block if block ~ ~-1 ~-1 netherite_block if block ~ ~-1 ~ netherite_block if block ~ ~-1 ~1 netherite_block if block ~1 ~-1 ~-1 netherite_block if block ~1 ~-1 ~ netherite_block if block ~1 ~-1 ~1 netherite_block run advancement grant @s only lap:adventure/netherite_beacon

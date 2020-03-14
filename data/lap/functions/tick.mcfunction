@@ -123,3 +123,9 @@ function lap:piglin_armor
 
 # Check bartering
 function lap:check_bartering
+
+# Check insta-mining
+function lap:check_instamine
+
+# Check netherite beacon
+function lap:check_beacon

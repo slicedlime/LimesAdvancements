@@ -1,0 +1,30 @@
+{
+  "parent": "lap:adventure/beacon",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_block"
+    },
+    "title": {
+      "translate": "Weird Flex But Ok"
+    },
+    "description": {
+      "translate": "Activate a Beacon on a base of Netherite Blocks"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

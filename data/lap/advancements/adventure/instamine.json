@@ -1,0 +1,31 @@
+{
+  "parent": "lap:adventure/full_beacon",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_pickaxe",
+	  "nbt": "{Damage:0,Enchantments:[{lvl:5s, id:\"minecraft:efficiency\"}]}"
+    },
+    "title": {
+      "translate": "One Hit Wonder"
+    },
+    "description": {
+      "translate": "Get high enough efficiency on a pickaxe to instantly mine stone"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "parent": "lap:combat/arrow_kill",
+  "display": {
+    "icon": {
+      "item": "minecraft:target"
+    },
+    "title": {
+      "translate": "advancements.adventure.bullseye.title"
+    },
+    "description": {
+      "translate": "Hit the bullseye of a target with an arrow from 10 blocks away"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bullseye": {
+      "trigger": "minecraft:target_hit",
+      "conditions": {
+        "signal_strength": 15,
+        "projectile": {
+          "type": "minecraft:arrow"
+        },
+        "shooter": {
+          "distance": {
+            "absolute": {
+              "min": 10
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bullseye"
+    ]
+  ]
+}

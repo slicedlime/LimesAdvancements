@@ -1,0 +1,50 @@
+{
+  "parent": "lap:adventure/full_beacon",
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_block"
+    },
+    "title": {
+      "translate": "Six-Pack of Beacon"
+    },
+    "description": {
+      "translate": "Have all maximum level beacon effects applied at once"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "beacon": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+	    "effects": {
+          "minecraft:speed": {
+            "amplifier": 1
+          },
+          "minecraft:haste": {
+            "amplifier": 1
+          },
+          "minecraft:resistance": {
+            "amplifier": 1
+          },
+          "minecraft:jump_boost": {
+            "amplifier": 1
+          },
+          "minecraft:strength": {
+            "amplifier": 1
+          },
+          "minecraft:regeneration": {
+            "amplifier": 0
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "beacon"
+    ]
+  ]
+}
