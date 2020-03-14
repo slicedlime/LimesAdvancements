@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:chest"
+    },
+    "title": {
+      "translate": "Collector"
+    },
+    "description": {
+      "translate": "Gather ALL the things!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/block/mushroom_stem.png"
+  },
+  "criteria": {
+    "left_end": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+	    "from": "minecraft:the_end",
+		"to": "minecraft:overworld"
+      }
+    }
+  },
+  "requirements": [
+    [
+	  "left_end"
+    ]
+  ]
+}

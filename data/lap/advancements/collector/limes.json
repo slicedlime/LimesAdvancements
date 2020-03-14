@@ -1,0 +1,234 @@
+{
+  "parent": "lap:collector/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:lime_dye"
+    },
+    "title": {
+      "translate": "Sliced"
+    },
+    "description": {
+      "translate": "Collect a lime version of all things that can be dyed"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_wool"
+          }
+        ]
+      }
+    },
+    "terracotta": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_terracotta"
+          }
+        ]
+      }
+    },
+    "carpet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_carpet"
+          }
+        ]
+      }
+    },
+    "glass": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_stained_glass"
+          }
+        ]
+      }
+    },
+    "glass_pane": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_stained_glass_pane"
+          }
+        ]
+      }
+    },
+    "shulker_box": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_shulker_box"
+          }
+        ]
+      }
+    },
+    "glazed_terracotta": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_glazed_terracotta"
+          }
+        ]
+      }
+    },
+    "concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_concrete"
+          }
+        ]
+      }
+    },
+    "concrete_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_concrete_powder"
+          }
+        ]
+      }
+    },
+    "dye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_dye"
+          }
+        ]
+      }
+    },
+    "bed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_bed"
+          }
+        ]
+      }
+    },
+    "banner": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_banner"
+          }
+        ]
+      }
+    },
+    "helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:leather_helmet",
+            "nbt": "{display:{color:8439583}}"
+          }
+        ]
+      }
+    },
+    "chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:leather_chestplate",
+            "nbt": "{display:{color:8439583}}"
+          }
+        ]
+      }
+    },
+    "leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:leather_leggings",
+            "nbt": "{display:{color:8439583}}"
+          }
+        ]
+      }
+    },
+    "boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:leather_boots",
+            "nbt": "{display:{color:8439583}}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wool"
+    ],
+    [
+      "terracotta"
+    ],
+    [
+      "carpet"
+    ],
+    [
+      "glass"
+    ],
+    [
+      "glass_pane"
+    ],
+    [
+      "shulker_box"
+    ],
+    [
+      "glazed_terracotta"
+    ],
+    [
+      "concrete"
+    ],
+    [
+      "concrete_powder"
+    ],
+    [
+      "dye"
+    ],
+    [
+      "bed"
+    ],
+    [
+      "banner"
+    ],
+	[
+      "helmet"
+    ],
+	[
+      "chestplate"
+    ],
+	[
+      "leggings"
+    ],
+	[
+      "boots"
+    ]
+  ]
+}

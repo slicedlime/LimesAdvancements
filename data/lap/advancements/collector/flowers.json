@@ -1,0 +1,35 @@
+{
+  "parent": "lap:collector/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:oxeye_daisy"
+    },
+    "title": {
+      "translate": "Flower Power"
+    },
+    "description": {
+      "translate": "Collect all types of flowers"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "dandelion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dandelion"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dandelion"
+    ]
+  ]
+}
