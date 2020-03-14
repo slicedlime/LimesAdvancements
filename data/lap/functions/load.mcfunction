@@ -51,3 +51,7 @@ scoreboard objectives add lap_minecart_y dummy "Minecart boarding location Y"
 scoreboard objectives add lap_minecart_z dummy "Minecart boarding location Z"
 
 scoreboard objectives add lap_golem_health dummy "Iron Golem Health"
+
+scoreboard objectives add lap_gold_ingots dummy "Gold Ingot Count"
+scoreboard objectives add lap_prev_gold dummy "Gold Ingots Last Tick"
+scoreboard objectives add lap_threw_gold minecraft.dropped:minecraft.gold_ingot "Dropped Gold Ingot"

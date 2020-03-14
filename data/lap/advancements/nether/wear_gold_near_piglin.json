@@ -1,0 +1,30 @@
+{
+  "parent": "lap:nether/in_nether",
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_helmet"
+    },
+    "title": {
+      "translate": "One of Us"
+    },
+    "description": {
+      "translate": "Wear a piece of golden armor near a Piglin"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

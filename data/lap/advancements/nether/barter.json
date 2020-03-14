@@ -1,0 +1,30 @@
+{
+  "parent": "lap:nether/wear_gold_near_piglin",
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    },
+    "title": {
+      "translate": "You Have Dis"
+    },
+    "description": {
+      "translate": "Barter with a piglin"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+      }
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

@@ -117,3 +117,9 @@ function lap:minecart_travel
 
 # Check iron golem healing
 function lap:golem_healing
+
+# Check players with gold armor near piglins
+function lap:piglin_armor
+
+# Check bartering
+function lap:check_bartering
