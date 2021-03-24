@@ -19,11 +19,9 @@
     "chorus_fruit": {
       "trigger": "minecraft:consume_item",
       "conditions": {
-        "items": [
-          {
+        "item": {
             "item": "minecraft:chorus_fruit"
-          }
-        ]
+        }
       }
     }
   },
